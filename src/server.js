@@ -23,7 +23,9 @@ class App {
     this.express.use(express.json());
   }
 
-  routes() {}
+  routes() {
+    this.express.use(require("./routes"));
+  }
 }
 
 module.exports = new App().express;
